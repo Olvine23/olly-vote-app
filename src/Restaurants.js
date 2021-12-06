@@ -14,6 +14,7 @@ class Restaurants extends Component {
                .child(key)
                .child('votes')
                .child(currentUser.uid)
+
                .set(currentUser.displayName);
   }
 
