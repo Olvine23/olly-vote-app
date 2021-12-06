@@ -6,15 +6,12 @@ const CurrentUser = ({ user }) => {
   return (
     <div className="CurrentUser">
        {/* {user.photoURL} */}
-       <img className = "CurrentUser--photo" src={ user.photoURL }   alt={user.displayName} />
-       <div className = "CurrentUser--identification">
+       <img className="CurrentUser--photo" src={ user.photoURL }   alt={user.displayName} />
+       <div className="CurrentUser--identification">
          <h3>{user.displayName}</h3>
          <p>{user.email}</p>
-         <button onClick ={() => auth.signOut()}>Sign Out</button>
-         
-
-
-
+         <button onClick={() => auth.signOut()}>Sign Out</button>
+  
        </div>
     </div>
   );
