@@ -5,9 +5,9 @@ import map from 'lodash/map';
 import './Restaurants.css';
 
 class Restaurants extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
   handleSelect(key){
     const currentUser = this.props.user;
     database.ref('/restaurants')
